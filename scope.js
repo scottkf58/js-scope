@@ -58,11 +58,11 @@ function sendDataToClient() {
 
     if (userObject.handle === username) {
       userObject.authenticated = true;
-      return userObject
+      return userObject;
     } else {
-      return userObject
+      return userObject;
     }
+  authenticateUser(userObject, 'neo');
   }
-  authenticateUser(userObject, 'neo')
-  return userObject
+  return userObject;
 }
